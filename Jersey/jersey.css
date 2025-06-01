@@ -1,0 +1,520 @@
+header{
+    width: 100%;
+    z-index: 5;
+    position: fixed; /* to make the header fixed */
+    background-color: #14100f;
+}
+
+header .nav-bar{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+}
+.nav-bar .logo-bar{
+    display: flex;
+    align-items: center;
+    
+}
+.nav-bar .logo-bar .logo-text{
+    line-height: 1;
+    font-size: 25px;
+    color: #f7f7f6;
+}
+
+.nav-bar .nav-list{
+    display: flex;
+    align-items: center;
+    gap: 13px;
+} 
+
+
+.nav-bar .nav-list .nav-link{
+    font-size: 18px;
+    padding: 0 15px;
+    color: #f7f7f6;
+    position: relative;
+}
+.nav-bar .nav-list .nav-link:hover{
+    color: white;
+}
+.nav-bar .nav-list .nav-link::before{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    border-radius: 3px;
+    background-color:#f7f7f6;
+    transition: 0.3s ease;
+}
+.nav-bar .nav-list .nav-link:hover::before{
+    width: 100%;
+}
+/*Hero-section*/
+
+.hero-section{
+    min-height: 100vh; /* to make the hero section full height */
+   background-image: linear-gradient(
+    rgba(4,9,30,0.7),rgba(4,9,30,0.7)),
+    url(img/bg1.jpg);
+    background-position: center;
+    background-size: cover;
+
+   
+
+
+}
+.hero-section .section-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* to make the hero section full height */
+
+}
+.hero-section .hero-detail{
+    color: #f7f7f6;
+   text-align: center;
+    
+    
+}
+.hero-section .hero-detail .title{
+    font-size: 50px;
+    font-weight: 600;
+    
+  
+}
+.hero-section .hero-detail .subtitle{
+    font-size: 30px;
+    margin: 15px 0;
+
+    
+}
+
+
+.hero-section .hero-detail .buttons{
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+    justify-content: center;
+}
+.hero-section .hero-detail .button{
+    padding: 10px 26px;
+    background: transparent;
+    color: #f7f7f6;
+    border-radius: 8px;
+    border: 2px solid #f7f7f6;
+    font-weight: 550;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.3s ease;
+    position: relative;
+}
+.hero-section .hero-detail .button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #f7f7f6;
+    transition: 0.5s;
+    z-index: -1;
+}
+.hero-section .hero-detail .button:hover::before
+{
+    width: 100%;
+}
+.hero-section .hero-detail .button:hover{
+    color: #14100f;
+}
+
+/*Brand-section*/
+.brand-section{
+    padding: 40px 0;
+    background: #f7f7f6;
+    height: auto;
+}
+
+.brand-section .section-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.brand-section  .feature-details{
+    margin: 0 auto;
+    width: 70%;
+    
+    
+}
+.brand-section .feature-details .title{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom:20px;
+}
+
+.brand-section .feature-details .description{
+    font-size: 18px;
+   
+}
+
+.brand-section .container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.brand-section .container .support-container{
+    width: 350px;
+    height: auto;
+    background-color:#efefef;
+    border-radius: 5px;
+   box-shadow: 0 0 5px rgb(207, 207, 207);
+    text-align: center;
+    transition: 0.3s ease;
+    
+}
+.brand-section .container .support-container:hover{
+    background-color: #eaeaea;
+}
+.brand-section .support-container .support-icon{
+    width: 60px;
+}
+.brand-section .support-container .text{
+    font-size: 17px;
+    margin: 7px 0;
+}
+.brand-section .support-container .text-supp{
+    font-size: 14px;
+}
+
+/*Collection Section*/
+.collection-section{
+    height: auto;
+    background: #14100f;
+    color: #f7f7f6;
+    padding: 40px 0;
+
+}
+.collection-section .section-content{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    height: auto;
+   
+}
+.collection-section .collect-img-wrapper{
+    width: 650px;
+    
+   
+}
+.collection-section .collect-img-wrapper .collect-img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+.collection-section .collect-img-wrapper .collect-img:hover{
+    box-shadow: 0 0 10px gray;
+    
+}
+.collection-section .collection-detail .title{
+    font-size: 40px;
+    width: 50%;
+    
+}
+.collection-section .collection-detail .description{
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.collection-section .collection-detail .buttons{
+    margin: 40px;
+    position: relative;
+}
+
+.collection-section .collection-detail .button{
+    padding: 15px 25px;
+    background-color: #f7f7f6;
+    color: #14100f;
+    position: absolute;
+    left: -40px;
+    border-radius: 15px;
+    transition: 0.4s ease;
+}
+.collection-section .collection-detail .button:hover{
+    border-bottom-right-radius: 0px;
+    box-shadow: 0 0 17px gray;
+    
+}
+
+/*Highlight Section*/
+.highlight-section{
+    height: auto;
+    background: #f7f7f6;
+    color: #14100f;
+    padding: 40px 0;
+}
+.highlight-section .section-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px 60px;
+    gap: 20px;
+}
+.highlight-section .highlight-card{
+    max-width: 250px;
+    width: calc(33.33%-20px);
+    height: auto;
+    border-radius: 3px;
+    background-color: rgb(242, 241, 241);
+    box-shadow: 0 0 3px rgb(56, 56, 56);
+    
+    
+}
+.highlight-section .highlight-card .highlight-img{
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.highlight-section .highlight-card .text{
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 3px;
+
+}
+
+.highlight-section .highlight-card .price{
+    font-size: 15px;
+    margin: 5px 3px;
+    color: rgb(43, 42, 42);
+}
+
+
+/*Responsive Design*/
+
+@media screen and (max-width: 900px){
+    body.show-mobile-menu header::before{
+        content: '';
+        position: fixed;
+        left:0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        backdrop-filter: blur(5px);
+        background: rgba(47, 47, 47, 0.3);
+    }
+
+    .nav-bar :where(#menu-open-button, #menu-close-button),
+    .about-section .about-details{
+        font-size: 20px;
+        display: block; 
+        background: none; /* Removes the background */
+        border: none; /* Removes any border if present */
+        outline: none; /* Removes the outline */
+        color: #f7f7f6;
+
+    }
+    .nav-bar :where( #menu-close-button)
+    {
+        color:#14100f;
+    }
+    .nav-bar #menu-close-button{
+        position: absolute;
+        right: 30px;
+        top: 30px;
+    }
+
+    .nav-bar .nav-list {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 320px;
+        left:0px;
+        top:-320px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap:15px;
+        
+        background: #f7f7f6;
+        transition: 0.5s ease;
+    }
+
+    body.show-mobile-menu .nav-bar .nav-list{
+        top: 0px;
+    }
+
+    .nav-bar .nav-list .nav-link {
+        display: block; /* Ensure each link takes full width */
+        margin-top: 0; /* Remove extra margin */
+        text-align: center; /* Center-align the text */
+        padding: 10px 0; /* Add padding for better spacing */
+        font-size: 20px;
+        color: #14100f;
+    }
+    .nav-bar .nav-list .nav-link:hover{
+        color: black;
+    }
+    .nav-bar .nav-list .nav-link::before{
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        border-radius: 3px;
+        background-color:#14100f;
+        transition: 0.3s ease;
+    }
+
+    .brand-section .brand-img-wrapper {
+        max-width: 370px; /* Reduce the maximum width */
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .brand-section .brand-img {
+        height: 300px; /* Reduce the height */
+    }
+
+    .collection-section .collect-img-wrapper{
+        width: 450px;
+        
+       
+    }
+    .collection-section .collect-img-wrapper .collect-img{
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        
+    }
+
+    .highlight-section .section-content {
+        display: flex; /* Use Flexbox */
+        flex-wrap: wrap; /* Allow wrapping if necessary */
+        justify-content: center; /* Center the cards horizontally */
+        gap: 15px; /* Adjust spacing between the cards */
+    }
+
+    .highlight-section .highlight-card {
+        width: calc(33.33% - 15px); /* Ensure 3 cards fit in a row */
+        max-width: 230px; /* Set a maximum width for the cards */
+        height: auto; /* Maintain auto height */
+        border-radius: 3px;
+    }
+  
+    .highlight-section .highlight-card .highlight-img {
+        width: 100%; /* Make the image responsive */
+        height: 300px; /* Maintain aspect ratio */
+        object-fit: cover; /* Ensure the image fits within its container */
+        border-radius: 3px;
+    }
+
+}
+@media screen and (min-width:900px) {
+    .nav-bar .fas{
+        display: none;
+    }
+    
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .brand-section .feature-details .title{
+        font-size: 25px;
+        text-transform: uppercase;
+        margin-bottom:20px;
+    }
+    
+    .brand-section .feature-details .description{
+        font-size: 14px;
+       
+    }
+    
+    .brand-section .section-content .brand-item {
+        flex-direction: column; /* Keep items stacked in a column */
+         /* Adjust spacing for smaller screens */
+        
+    }
+
+    .brand-section .brand-img-wrapper {
+        max-width: 350px; /* Further reduce the width */
+    }
+
+    .brand-section .brand-img {
+        height: 200px; /* Further reduce the height */
+    }
+    .brand-section .support-container .support-icon{
+        width: 40px;
+    }
+
+    .brand-section .support-container .text{
+        font-size: 13px;
+    }
+    .brand-section .support-container .text-supp{
+        font-size: 12px;
+    }
+
+    .collection-section .collect-img-wrapper{
+        width: 400px;
+        
+       
+    }
+    .collection-section .collect-img-wrapper .collect-img{
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        
+    }
+
+    .collection-section .collection-detail .title{
+        font-size: 26px;
+        width: 50%;
+        
+    }
+    .collection-section .collection-detail .description{
+        font-size: 12px;
+        margin: 10px 0;
+    }
+    .collection-section .collection-detail .button{
+        padding: 8px 10px;
+        border-radius: 10px
+    }
+
+    .highlight-section .section-content {
+        display: flex; /* Use Flexbox */
+        flex-wrap: wrap; /* Allow wrapping if necessary */
+        justify-content: center; /* Center the cards horizontally */
+        gap: 15px; /* Adjust spacing between the cards */
+    }
+
+    .highlight-section .highlight-card {
+        width:100%; /* Ensure 2 cards fit in a row */
+        max-width: 250px; /* Set a maximum width for the cards */
+        height: auto; /* Maintain auto height */
+        border-radius: 3px;
+    }
+
+    .highlight-section .highlight-card .highlight-img {
+        width: 100%; /* Make the image responsive */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover; /* Ensure the image fits within its container */
+        border-radius: 3px;
+    }
+  
+}
