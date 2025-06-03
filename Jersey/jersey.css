@@ -278,7 +278,10 @@ header .nav-bar{
     border-radius: 3px;
     background-color: rgb(242, 241, 241);
     box-shadow: 0 0 3px rgb(56, 56, 56);
-    
+    transition: 0.5s ease;
+}
+.highlight-section .highlight-card:hover{
+    box-shadow: 0 0 16px gray;
     
 }
 .highlight-section .highlight-card .highlight-img{
@@ -301,7 +304,97 @@ header .nav-bar{
     color: rgb(43, 42, 42);
 }
 
+/*Contact Section*/
 
+.contact-section {
+    height: auto;
+    background-color: #0f1a2b;
+   color: #e6f0f2;
+    padding: 40px 80px;
+}
+.contact-section .section-content {
+    display: flex;
+    align-items: flex-start; 
+    gap: 50px;
+    justify-content: space-between; 
+}
+
+.contact-section .section-title::after{
+    background-color: rgb(255, 185, 56);
+}
+
+.contact-section .contact-detail{
+    padding: 30px 50px;
+    background-color:#efefef;
+    color: #14100f;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(207, 207, 207);
+   transition: all ease 0.3s;
+   
+}
+
+.contact-section .contact-detail:hover{
+    box-shadow: 0 0 10px rgb(207, 207, 207);
+    background-color: #eaeaea;
+}
+.contact-section .contact-details .contact-detail{
+  margin-bottom: 20px;
+}
+.contact-section .contact-detail .title{
+    margin-bottom: 5px;
+}
+
+.contact-section .contact{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;  
+}
+.contact-section .contact input{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 50px;
+    border: 2px solid rgb(230, 230, 230);
+    outline: none;
+    box-shadow: 0 0 5px rgb(216, 216, 216);
+   padding-right: 25px;
+   padding-left: 5px;
+   font-weight: 500;
+    border-radius: 5px;
+}
+.contact-section .contact .contact-inputs::placeholder{
+
+    color: rgb(180, 180, 180);
+}
+.contact-section .contact .contact-inputs:focus{
+    border-color: orange;
+}
+.contact-section .contact textarea{
+    height: 140px;
+    border: 2px solid rgb(230, 230, 230);
+    outline: none;
+    box-shadow: 0 0 5px rgb(216, 216, 216);
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-top: 15px;
+    resize: vertical;
+}
+.contact-section .contact .submit-btn{
+    padding: 15px 30px;
+    font-size: 16px;
+    gap: 10px;
+    border: none;
+    color: #14100f;
+    border-radius: 15px;
+    background-color: #f6fafd;
+    transition: all 0.3s ease;
+}
+.contact-section .contact .submit-btn:hover{
+    box-shadow: 0 0 15px gray;
+}
+.contact-section .contact .submit-btn:active{
+    opacity: 0.9;
+}
 /*Responsive Design*/
 
 @media screen and (max-width: 900px){
@@ -424,6 +517,19 @@ header .nav-bar{
         border-radius: 3px;
     }
 
+    .contact-section .section-content{
+        align-items: center;
+    }
+
+    .contact-section .contact-detail{
+        margin-top: 15px;
+        padding: 20px 30px;
+    }
+    .contact-section .contact input{
+       width: 300px;
+       height: 40px;
+    }
+
 }
 @media screen and (min-width:900px) {
     .nav-bar .fas{
@@ -516,5 +622,24 @@ header .nav-bar{
         object-fit: cover; /* Ensure the image fits within its container */
         border-radius: 3px;
     }
+
+    .contact-section .section-content{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .contact-section .contact-detail{
+        padding: 18px 27px;
+    }
+    .contact-section .contact-detail .title{
+        font-size: 20px;
+    }
+    .contact-section .contact-detail .description{
+        font-size: 12px;
+    }
+    .contact-section .contact input{
+       width: 250px;
+       height: 40px;
+    }
+
   
 }
