@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Basic SEO-->
+    <meta name="description" content="JerseyStop is your ultimate destination for retro football jerseys, blending vintage sportswear with modern street style. Explore our unique collection and embrace the blokecore fashion movement.">
 
     <title>JerseyStop | Clothing </title>
+
+     <!--Links for Favicon icon-->
+     <link rel="icon" type="img/jpg" href="img/logo.jpg">
 
     <!--Links for CSS files-->
     <link rel="stylesheet" href="jersey.css">
@@ -32,16 +37,16 @@
                     <a href="#" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Collection</a>
+                    <a href="#about" class="nav-link">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">About</a>
+                    <a href="#collection" class="nav-link">Collection</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Service</a>
+                    <a href="#highlights" class="nav-link">Highlights</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Contact</a>
+                    <a href="#contact" class="nav-link">Contact</a>
                 </li>
             </ul>
 
@@ -52,15 +57,15 @@
 
     <main>
         <!--Hero section-->
-        <section class="hero-section">
+        <section class="hero-section" >
             <div class="section-content">
-                <div class="hero-detail">
-                    <h1 class="title">HERE TO TAKEOVER!</h1>
+                <div class="hero-detail animate">
+                    <h1 class="title">HERE TO <span class="title-main">TAKEOVER!</span></h1>
                    
                    <div class="buttons">
-                        <a href="#" class="button explore">Explore &rarr;</a>
+                        <a href="#about" class="button explore">Explore &rarr;</a>
 
-                        <a href="#" class="button location">Contact Us &rarr;</a>
+                        <a href="#contact" class="button location">Contact Us &rarr;</a>
                    </div>
                 </div>
            
@@ -69,21 +74,21 @@
            
         </section>
         <!--Featured section-->
-        <section class="brand-section">
-            <h1 class="section-title">
+        <section class="brand-section animated" id="about">
+            <h1 class="section-title"> 
                 Welcome To Our Store
             </h1>
             <div class="section-content">
-                    <div class="feature-details">
+                    <div class="feature-details animated">
                        
-                        <h1 class="title">Wear the Game, Feel the Pride.</h1>
+                        <h1 class="title"> <span class="title-main">Blokecore:</span>The Raw,Rebellious Spirit of Football Meets Street Style</h1>
                         
-                        <p class="description">Step onto the streets like you’re stepping onto the field. 
-                            Our football jerseys are mo
-                            re than just gear — they’re a symbol of loyalty, passion, and pride. 
-                            Whether you’re cheering from the stands or watching from home, represent your team in style.</p> 
+                        <p class="description">Blokecore isn’t just a trend—it’s a movement.
+                            Born from the stands,the streets,and the unfiltered passion of football culture,this style is all about mixing vintage sportswear with modern attitude.
+                            Think retro jerseys,track jackets,baggy jeans,and beat-up sneakers—worn with the swagger of a ’90s terrace legend.
+                        </p> 
                     </div>
-                    <div class="container">
+                    <div class="container animated">
                         <div class="support-container">
                             <img src="img/customer-support.png" alt="customer-support" class="support-icon">
                             <h2 class="text">24 X 7 FREE SUPPORT</h2>
@@ -113,17 +118,17 @@
         </section>
 
         <!--Collection section-->
-        <section class="collection-section">
-            <div class="section-content">
-                <div class="collect-img-wrapper">
-                    <img src="img/col2.jpg" alt="" class="collect-img">
+        <section class="collection-section" id="collection">
+            <div class="section-content ">
+                <div class="collect-img-wrapper animated">
+                    <img src="img/col2.jpg" alt="collection" class="collect-img">
                 </div>
 
-                <div class="collection-detail">
-                    <h1 class="title">OUR COLLECTION</h1>
+                <div class="collection-detail animated">
+                    <h1 class="title"><span class="title-main">OUR</span> COLLECTION</h1>
                     <p class="description">YOUR HUNT FOR RETRO JERSEY ENDS HERE!</p>
                     <div class="buttons">
-                        <a href="#" class="button">Shop Now</a>
+                        <a href="collection.html" class="button">Shop Now</a>
                     </div>
                 </div>
             </div>
@@ -131,7 +136,7 @@
         </section>
 
         <!--Highlights section-->
-        <section class="highlight-section">
+        <section class="highlight-section animated" id="highlights">
             <h1 class="section-title">Highlights</h1>
             <div class="section-content">
                 
@@ -179,10 +184,10 @@
         </section>
 
         <!--Contact Section-->
-        <section class="contact-section">
-            <h1 class="section-title">Contact Us</h1>
+        <section class="contact-section" id="contact">
+            <h1 class="section-title animated">Contact Us</h1>
             <div class="section-content">
-                <div class="contact-details">
+                <div class="contact-details animated">
                     <div class="contact-detail">
                         <h1 class="title">Location</h1>
                  
@@ -206,7 +211,7 @@
                    
                 </div>
                 
-                    <form action="https://api.web3forms.com/submit" method="POST" class="contact">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact animated">
                         <div class="contact-title">
                             <h1 class="title">Recommend Us</h1>
                         </div>
@@ -225,23 +230,32 @@
         </section>
 
         <!--Footer Section-->
-        <section class="footer-section">
+        <footer class="footer-section">
            <div class="section-content">
             <p class="copyright-text"> &#169; JerseyStop | Clothing</p>
+            
             <div class="social-link-list">
-                <a href="#" class="social-link">
+                <p class="text">Follow Us</p>
+                <a href="https://www.facebook.com/profile.php?id=61565590057423" class="social-link" target="_blank">
                     <i class="fa-brands fa-facebook"></i>
                 </a>
-                <a href="#" class="social-link">
+                <a href="https://www.instagram.com/jerseystopnepal/" class="social-link" target="_blank">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
-                <a href="#" class="social-link">
+                <a href="https://www.tiktok.com/@jerseystopnepal" class="social-link" target="_blank">
                     <i class="fa-brands fa-tiktok"></i>
                 </a>
                </div>
+
+               <p class="policy-text">
+                <a href="#" class="policy-link">Privacy policy</a>
+                <span class="separator">&bull;</span>
+                <a href="#" class="policy-link">Refund policy</a>
+               </p>
+
            </div>
           
-        </section>
+        </footer>
     </main>
 
     <script src="jersey.js"></script>

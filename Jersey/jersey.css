@@ -10,7 +10,7 @@ header .nav-bar{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 25px;
+    padding: 32px;
 }
 .nav-bar .logo-bar{
     display: flex;
@@ -19,6 +19,8 @@ header .nav-bar{
 }
 .nav-bar .logo-bar .logo-text{
     line-height: 1;
+    font-family: baseneue;
+    padding-right: 50px;
     font-size: 25px;
     color: #f7f7f6;
 }
@@ -33,6 +35,7 @@ header .nav-bar{
 .nav-bar .nav-list .nav-link{
     font-size: 18px;
     padding: 0 15px;
+    font-family: baseneue-mid;
     color: #f7f7f6;
     position: relative;
 }
@@ -82,9 +85,12 @@ header .nav-bar{
 }
 .hero-section .hero-detail .title{
     font-size: 50px;
-    font-weight: 600;
-    
-  
+    font-family: baseneue-mid;
+    color: #f5efeb
+}
+.hero-section .hero-detail .title .title-main{
+    font-family: baseneue-mid;
+    color: #f5efeb
 }
 .hero-section .hero-detail .subtitle{
     font-size: 30px;
@@ -97,6 +103,7 @@ header .nav-bar{
 .hero-section .hero-detail .buttons{
     display: flex;
     gap: 30px;
+    
     margin-top: 40px;
     justify-content: center;
 }
@@ -106,7 +113,7 @@ header .nav-bar{
     color: #f7f7f6;
     border-radius: 8px;
     border: 2px solid #f7f7f6;
-    font-weight: 550;
+    font-family: baseneue-mid;
     overflow: hidden;
     z-index: 1;
     transition: 0.3s ease;
@@ -154,9 +161,14 @@ header .nav-bar{
     
 }
 .brand-section .feature-details .title{
-    font-size: 30px;
+    font-size: 23px;
+    font-family: baseneue-mid;
     text-transform: uppercase;
     margin-bottom:20px;
+}
+.brand-section .feature-details .title .title-main{
+    font-family: baseneue-mid;
+    color: rgb(110, 5, 5);
 }
 
 .brand-section .feature-details .description{
@@ -184,6 +196,7 @@ header .nav-bar{
 }
 .brand-section .container .support-container:hover{
     background-color: #eaeaea;
+    box-shadow: 0 0 7px rgb(163, 163, 163);
 }
 .brand-section .support-container .support-icon{
     width: 60px;
@@ -229,8 +242,14 @@ header .nav-bar{
 }
 .collection-section .collection-detail .title{
     font-size: 40px;
+    font-family: baseneue-mid;
     width: 50%;
+   
     
+}
+.collection-section .collection-detail .title .title-main{
+    font-family: dreams;
+    font-size: 40px;
 }
 .collection-section .collection-detail .description{
     font-size: 16px;
@@ -244,6 +263,7 @@ header .nav-bar{
 
 .collection-section .collection-detail .button{
     padding: 15px 25px;
+    font-family: baseneue-mid;
     background-color: #f7f7f6;
     color: #14100f;
     position: absolute;
@@ -262,13 +282,14 @@ header .nav-bar{
     height: auto;
     background: #f7f7f6;
     color: #14100f;
-    padding: 40px 0;
+    padding: 20px 0;
+    padding-bottom: 50px;
 }
 .highlight-section .section-content{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 30px 60px;
+    padding: 5px 60px;
     gap: 20px;
 }
 .highlight-section .highlight-card{
@@ -334,8 +355,8 @@ header .nav-bar{
 }
 
 .contact-section .contact-detail:hover{
-    box-shadow: 0 0 10px rgb(207, 207, 207);
-    background-color: #eaeaea;
+    box-shadow: 0 0 10px rgb(163, 163, 163);
+    background-color: #e2e1e1;
 }
 .contact-section .contact-details .contact-detail{
   margin-bottom: 20px;
@@ -348,6 +369,9 @@ header .nav-bar{
     display: flex;
     flex-direction: column;
     gap: 15px;  
+}
+.contact-section .contact-title .title{
+    font-family: baseneue-mid;
 }
 .contact-section .contact input{
     display: flex;
@@ -395,6 +419,45 @@ header .nav-bar{
 .contact-section .contact .submit-btn:active{
     opacity: 0.9;
 }
+
+/*Footer Section*/
+
+.footer-section{
+    padding: 20px 0;
+    background-color: #f5efeb;
+    
+}
+.footer-section .section-content{
+    padding: 10px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.footer-section :where(.copyright-text, .social-link, .policy-link){
+    color: #0a1623;
+}
+
+.footer-section .social-link-list{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.footer-section .social-link-list .text{
+    font-family: aeonik-bold;
+}
+
+.footer-section .social-link-list .social-link{
+    font-size: 23px;
+    transition: all 0.2s ease;
+}
+.footer-section .social-link-list .social-link:hover{
+    color: rgb(253, 197, 94);
+}
+.footer-section .policy-text .separator{
+    margin: 0 5px;
+}
+
 /*Responsive Design*/
 
 @media screen and (max-width: 900px){
@@ -576,6 +639,10 @@ header .nav-bar{
         font-size: 12px;
     }
 
+    .collection-section .collection-detail .title .title-main{
+        font-size: 28px;
+    }
+
     .collection-section .collect-img-wrapper{
         width: 400px;
         
@@ -599,6 +666,7 @@ header .nav-bar{
     }
     .collection-section .collection-detail .button{
         padding: 8px 10px;
+        font-size: 15px;
         border-radius: 10px
     }
 
@@ -641,5 +709,37 @@ header .nav-bar{
        height: 40px;
     }
 
+    .footer-section .section-content{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
   
+}
+
+.animate{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.7s linear forwards;
+}
+
+@keyframes moveup{
+    100%{
+        opacity: 100%;
+        transform: translate(0px);
+    }
+}
+
+
+
+.animated {
+    opacity: 0; /* Start hidden */
+    transform: translateX(-50px); /* Start off-screen to the left */
+    transition: opacity 0.7s ease, transform 0.7s ease; /* Smooth transition */
+}
+
+/* Final state when the element is visible */
+.animated.active {
+    opacity: 1; /* Fully visible */
+    transform: translateX(0); /* Move to its original position */
 }
